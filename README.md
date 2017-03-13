@@ -2,7 +2,7 @@
 
 Follow these steps for **SwiftLint** integration:
 
-1. Install [SwiftLint](https://github.com/realm/SwiftLint) (preferred via Cocoapods) in project
+1. Install [SwiftLint](https://github.com/realm/SwiftLint) (preferred via Cocoapods)
 2. Open terminal:
 ```
 cd path/to/project
