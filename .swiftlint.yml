@@ -28,18 +28,53 @@ opt_in_rules: # some rules are only opt-in
 cyclomatic_complexity:
   warning: 4
   error: 6
+
 empty_count:
   severity: warning
+
 file_length:
   warning: 300
   error: 1000
+
 force_cast:
   severity: warning
+
 force_try:
   severity: warning
+
 function_body_length:
   warning: 30
+  error: 50
+
 large_tuple:
   warning: 3
   error: 4
-line_length: 150
+
+line_length: 150 # only warning
+
+type_name:
+  min_length: 3 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50
+  excluded: # excluded via string
+    - T
+    - t
+
+variable_name:
+  min_length: 3 # only min_length and only warning
+  excluded: # excluded via string array
+    - id
+    - vc
+    - to
+    - a
+    - b
+    - t
+    - x
+    - y
+    - z
+    - p
+    - xy
+    - dx
+    - dy
+    - gr
